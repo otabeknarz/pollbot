@@ -129,7 +129,7 @@ async def send_poll_to_channel(message: Message) -> None:
 async def poll_query_handler(query: CallbackQuery) -> None:
     if await check_is_user_subscribed_the_channel(query.from_user.id):
         await query.answer(
-            "Сўровномада иштирок этиш учун каналымизга обуна бўлган бўлишингиз керак!",
+            "Сўровномада иштирок этиш учун каналимизга обуна бўлган бўлишингиз керак!",
             show_alert=True,
         )
         return
